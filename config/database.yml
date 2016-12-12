@@ -16,5 +16,5 @@ test:
 production:
   <<: *default
   database: blog-json-api_production
-  username: blog-json-api
-  password: <%= ENV['BLOG-JSON-API_DATABASE_PASSWORD'] %>
+  # username: blog-json-api
+  # password: <%= ENV['BLOG-JSON-API_DATABASE_PASSWORD'] %>

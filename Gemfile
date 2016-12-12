@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'faker'
+gem 'active_model_serializers'
 
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'pg', '~> 0.18'
@@ -8,6 +9,8 @@ gem 'puma', '~> 3.0'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl_rails'
 end
 
 group :development do
