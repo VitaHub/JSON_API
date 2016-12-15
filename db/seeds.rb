@@ -1,8 +1,8 @@
 if Address.count < 1
   ActiveRecord::Base.transaction do
-    Address.create!(
-      ip: "192.168.1.#{(1..50).to_a.sample}"
-    )
+    50.times do |n|
+      Address.create!(ip: "192.168.1.#{n}")
+    end
   end
 end
 
